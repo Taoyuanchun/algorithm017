@@ -1,7 +1,7 @@
 学习笔记
 
 深度优先搜索模板
-
+``` go
 Set visited = new HashSet<>();
 
 public void dfs(Node node, int target, Set visited) {
@@ -15,8 +15,9 @@ public void dfs(Node node, int target, Set visited) {
 		dfs(next, target, visited);
 	} 
 }
-
+```
 广度优先搜索模板
+``` go
 public void bfs(Node node, int target, Set visited) {
 	 Deque deque = new LinkedList<>();
 	 stack.offer(node);
@@ -28,3 +29,4 @@ public void bfs(Node node, int target, Set visited) {
 			 deque.offer(next);
 	 }
  } 
+```
